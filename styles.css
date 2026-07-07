@@ -1,0 +1,223 @@
+/* Couleur principale et police d'écriture */
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #2a982d; /* Vert forêt pour les liens */
+    text-decoration: none;
+}
+
+strong {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* En-tête */
+header {
+    background-color: #2a982d;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    padding: 20px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 7px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/* Met la page active en couleur dans le menu */
+nav a.active {
+    color: #2a982d;              /* ton vert forêt */
+    font-weight: 600;
+    border-bottom: 2px solid #2a982d;
+}
+
+/* Style de base pour les liens de la navigation */
+nav a {
+    color: #fff; /* Couleur initiale des liens */
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    transition: color 0.3s; /* Transition de la couleur sur 0.3 seconde */
+}
+
+/* Changement de couleur au survol */
+nav a:hover {
+    color: #2a982d; /* Nouvelle couleur au survol (vert forêt) */
+    text-decoration: none;
+}
+
+/* Section principale */
+main {
+    margin: 0 auto; /* Centre le contenu de la page horizontalement */
+    max-width: 1200px; /* Définit une largeur maximale pour le contenu */
+    padding: 0 20px; /* Ajoute des marges à gauche et à droite */
+    text-align: justify;
+}
+
+/* Photos */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Centrer l'image et ajouter un espace en dessous */
+}
+
+/* Publications */
+.publications {
+    padding-left: 1.2em;
+}
+
+.publications li {
+    margin-bottom: 1.2em;
+    line-height: 1.5;
+}
+
+/* Style de la photo en transparence */
+.header-image {
+    position: relative;
+    text-align: center;
+    height: 400px; /* Ajustez la hauteur selon vos besoins */
+    margin-bottom: 20px; /* Ajoute un espace de 20 pixels en bas de la div */
+}
+
+.header-image img {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    max-width: none; /* Désactivez la limitation de la largeur */
+    width: 100%; /* Assurez-vous que la largeur occupe 100% du conteneur */
+    max-height: 100%; /* Limitez la hauteur à 100% du conteneur */
+    object-fit: cover; /* Remplissez l'espace sans déformer l'image */
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
+
+.overlay h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.overlay p {
+    font-size: 18px;
+}
+
+.conteneur {
+    display: flex;
+    align-items: flex-start; /* Aligne les éléments verticalement en haut */
+    flex-direction: row; /* Définit la direction des éléments comme étant en ligne */
+}
+
+.textes {
+    display: flex;
+    flex-direction: column; /* Empile les éléments les uns sur les autres */
+    margin-left: 10px; /* Espacement entre l'image et les paragraphes */
+}
+
+/* Paramètres du footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contact-info, .social-links {
+    width: 45%; /* Ajustez la largeur selon vos besoins */
+}
+
+.contact-info h3, .social-links h3 {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+.contact-info p, .social-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.label {
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+}
+
+.address {
+    display: inline-block;
+    margin-left: 10px; /* Espacement entre "Adresse :" et l'adresse */
+}
+
+.social-links ul li {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s; /* Transition de la couleur sur 0.3 seconde */
+}
+
+/* Changement de couleur au survol */
+.social-links a:hover {
+    color: #2a982d; /* Nouvelle couleur au survol (vert forêt) */
+    text-decoration: none;
+}
